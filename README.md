@@ -11,3 +11,5 @@ Then it bundles this all together back into the json format, ready to be importe
 ---
 ### To do:
 - [ ] Add ability to be run as a command line utility.
+- [ ] Use folders to combine each path
+- [ ] Add domain name variable

@@ -42,7 +42,7 @@ fn main() {
                         let value = **&thing.annotation_data.get("value").unwrap();
 
                         // 4 curly brackets because half of them are escaping.  // get rid of quotes
-                        let url = format!{"{{{{ .baseurl }}}}{}", java_annotations::get_slice_inside("\"", "\"", value)};
+                        let url = format!{"{{{{ _.baseurl }}}}{}", java_annotations::get_slice_inside("\"", "\"", value)};
 
                         base.add_method(Request::new(
                             base.get_workspace_id(),
